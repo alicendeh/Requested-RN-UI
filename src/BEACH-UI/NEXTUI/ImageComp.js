@@ -1,6 +1,6 @@
 //import liraries
 import React, {Component} from 'react';
-import {View, Text, StyleSheet, Image} from 'react-native';
+import {View, Text, StyleSheet, ImageBackground} from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import Color from '../ColorTheme';
 import Overlapimgs from './OverlapImgs';
@@ -8,42 +8,42 @@ import Overlapimgs from './OverlapImgs';
 const ImageComp = () => {
   return (
     <View style={styles.container}>
-      <View style={{alignItems: 'center'}}>
-        <Image
+      <View style={{alignItems: 'center',padding: 7}}>
+        <ImageBackground
+          imageStyle={{borderRadius: 35 ,marginVertical: 7}}
           source={{uri: 'https://cutt.ly/ghMlyS4'}}
-          style={styles.img}
-          resizeMode="cover"
-        />
-      </View>
-      <View style={styles.iconImage}>
-        <Icon name="arrow-left" size={20} color="white" />
-      </View>
-      <View style={styles.bottomText}>
-        <Text
-          style={{
-            fontSize: 20,
-            color: 'white',
-            fontWeight: 'bold',
-            marginBottom: 9,
-          }}>
-          $995
-        </Text>
-        <Text style={{fontSize: 27, color: 'white'}}>Get our into new</Text>
-        <Text style={{fontSize: 25, color: 'white', fontWeight: 'bold'}}>
-          Sea Heaven in Bali
-        </Text>
-        <View style={styles.sidedContainer}>
-          <Overlapimgs />
-          <Text
-            style={{
-              color: 'white',
-              marginHorizontal: 12,
-              paddingTop: 26,
-              fontSize: 15,
-            }}>
-            Sofie,Lauren + 13 more
-          </Text>
-        </View>
+          style={styles.img}>
+          <View style={styles.iconImage}>
+            <Icon name="arrow-left" size={20} color="white" />
+          </View>
+          <View style={styles.bottomText}>
+            <Text
+              style={{
+                fontSize: 20,
+                color: 'white',
+                fontWeight: 'bold',
+                marginBottom: 9,
+              }}>
+              $995
+            </Text>
+            <Text style={{fontSize: 27, color: 'white'}}>Get our into new</Text>
+            <Text style={{fontSize: 25, color: 'white', fontWeight: 'bold'}}>
+              Sea Heaven in Bali
+            </Text>
+            <View style={styles.sidedContainer}>
+              <Overlapimgs />
+              <Text
+                style={{
+                  color: 'white',
+                  marginHorizontal: 12,
+                  paddingTop: 26,
+                  fontSize: 15,
+                }}>
+                Sofie,Lauren + 13 more
+              </Text>
+            </View>
+          </View>
+        </ImageBackground>
       </View>
     </View>
   );
@@ -56,30 +56,24 @@ const styles = StyleSheet.create({
     height: 40,
     borderRadius: 90,
     backgroundColor: 'black',
-    opacity: 3,
     alignItems: 'center',
     justifyContent: 'center',
-    marginHorizontal: 20,
-    position: 'absolute',
-    top: 20,
+    margin: 15,
   },
   img: {
-    width: '97%',
+    width: '100%',
     height: '97%',
-    borderRadius: 35,
-    marginVertical: 7,
   },
   bottomText: {
-    position: 'absolute',
-    top: 240,
-    left: 10,
-    paddingHorizontal: 25,
+   
+    marginTop:'auto',
+    padding:30
+    // backgroundColor:'red'
   },
   sidedContainer: {
     flexDirection: 'row',
   },
   container: {
-    // backgroundColor: 'teal',
     height: '60%',
   },
 });
