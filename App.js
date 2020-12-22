@@ -7,8 +7,8 @@ import MainApp from './src/BEACH-UI/NEXTUI/MainApp';
 const App = () => {
   return (
     <View style={styles.container}>
-      <MainApp />
-      {/* <UIApp /> */}
+      {/* <MainApp /> */}
+      <UIApp />
     </View>
   );
 };

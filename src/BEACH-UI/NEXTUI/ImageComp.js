@@ -8,9 +8,9 @@ import Overlapimgs from './OverlapImgs';
 const ImageComp = () => {
   return (
     <View style={styles.container}>
-      <View style={{alignItems: 'center',padding: 7}}>
+      <View style={{alignItems: 'center', padding: 7}}>
         <ImageBackground
-          imageStyle={{borderRadius: 35 ,marginVertical: 7}}
+          imageStyle={{borderRadius: 35, marginVertical: 7}}
           source={{uri: 'https://cutt.ly/ghMlyS4'}}
           style={styles.img}>
           <View style={styles.iconImage}>
@@ -52,8 +52,8 @@ const ImageComp = () => {
 // define your styles
 const styles = StyleSheet.create({
   iconImage: {
-    width: 40,
-    height: 40,
+    width: '10%',
+    height: '10%',
     borderRadius: 90,
     backgroundColor: 'black',
     alignItems: 'center',
@@ -65,9 +65,8 @@ const styles = StyleSheet.create({
     height: '97%',
   },
   bottomText: {
-   
-    marginTop:'auto',
-    padding:30
+    marginTop: 'auto',
+    padding: 30,
     // backgroundColor:'red'
   },
   sidedContainer: {
