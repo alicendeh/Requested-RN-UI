@@ -19,7 +19,8 @@ const Adventure = () => {
 // define your styles
 const styles = StyleSheet.create({
   container: {
-    marginHorizontal: 28,
+    justifyContent: 'center',
+    alignItems: 'center',
   },
 });
 

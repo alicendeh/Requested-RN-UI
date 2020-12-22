@@ -1,8 +1,8 @@
 //import liraries
 import React, {Component} from 'react';
 import {View, Text, StyleSheet} from 'react-native';
-import UIApp from './src/Fongoh_Martin/UIApp';
-import MainApp from './src/Fongoh_Martin/NEXTUI/MainApp';
+import UIApp from './src/BEACH-UI/UIApp';
+import MainApp from './src/BEACH-UI/NEXTUI/MainApp';
 // create a component
 const App = () => {
   return (

@@ -12,15 +12,13 @@ const Placestack = () => {
       id: '1',
       city: 'Bali',
       country: 'Indonesia',
-      imgLink:
-        'https://cutt.ly/OhMlfje',
+      imgLink: 'https://cutt.ly/OhMlfje',
     },
     {
       id: '2',
       city: 'Loire Valley',
       country: 'France',
-      imgLink:
-        'https://cutt.ly/IhMlo3m',
+      imgLink: 'https://cutt.ly/IhMlo3m',
     },
     {
       id: '3',
@@ -31,6 +29,7 @@ const Placestack = () => {
   ];
   return (
     <FlatList
+      contentContainerStyle={styles.body}
       keyExtractor={(item) => item.id}
       data={data}
       renderItem={({item}) => {
@@ -60,6 +59,10 @@ const styles = StyleSheet.create({
   mainPlaceName: {
     fontWeight: 'bold',
   },
+  body:{
+    padding: 20
+    // width: '100%'
+  }
 });
 
 //make this component available to the app

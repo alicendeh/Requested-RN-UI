@@ -13,8 +13,8 @@ const ReusablePlacesStack = (props) => {
 // define your styles
 const styles = StyleSheet.create({
   container: {
-    marginHorizontal: 15,
-    width: 350,
+    // marginHorizontal: 15,
+    width: '100%',
     height: 500,
     marginBottom: -190,
   },
